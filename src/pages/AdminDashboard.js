@@ -9,17 +9,17 @@ const AdminDashboard = () => {
   const [profiles, setProfiles] = useState([
     {
       id: 1,
-      name: "John Doe",
-      photo: "https://via.placeholder.com/100",
-      description: "Software Developer from New York",
-      address: "New York, NY",
+      name: "Dev Joshi",
+      photo: "./icons/channel-1.jpeg",
+      description: "Software Developer from Ahmedabad",
+      address: "Ahmedabad",
     },
     {
       id: 2,
-      name: "Jane Smith",
-      photo: "https://via.placeholder.com/100",
-      description: "Graphic Designer from Los Angeles",
-      address: "Los Angeles, CA",
+      name: "Jainam Soni",
+      photo: "./icons/channel-2.jpeg",
+      description: "Graphic Designer from Ahmedabad",
+      address: "Ahmedabad",
     },
   ]);
 

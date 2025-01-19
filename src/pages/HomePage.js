@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useHref, useNavigate } from "react-router-dom";
 import ProfileCard from "../components/ProfileCard";
 import SearchFilter from "../components/SearchFilter";
 
@@ -12,17 +12,17 @@ const HomePage = () => {
   const profiles = [
     {
       id: 1,
-      name: "John Doe",
-      photo: "https://via.placeholder.com/100",
-      description: "Software Developer from New York",
-      address: "New York, NY",
+      name: "Dev joshi",
+      photo: "./icons/channel-1.jpeg",
+      description: "Software Developer from Ahmedabad",
+      address: "Ahmedabad",
     },
     {
       id: 2,
-      name: "Jane Smith",
-      photo: "https://via.placeholder.com/100",
-      description: "Graphic Designer from Los Angeles",
-      address: "Los Angeles, CA",
+      name: "Jainam Soni",
+      photo: "./icons/channel-2.jpeg",
+      description: "Graphic Designer from ahmedabad",
+      address: "Ahmedabad",
     },
   ];
 
