@@ -14,8 +14,7 @@ const MapComponent = ({ address }) => {
       zoom: 2,
     });
 
-    // Mock address to coordinates conversion (replace with real geocoding)
-    const coords = { lng: 0, lat: 0 }; // Replace with real coordinates
+    const coords = { lng: 0, lat: 0 }; 
     new mapboxgl.Marker().setLngLat([coords.lng, coords.lat]).addTo(map);
   }, [address]);
 

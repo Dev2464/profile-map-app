@@ -53,8 +53,8 @@ const AdminDashboard = () => {
     setProfiles(profiles.filter((profile) => profile.id !== id));
   };
   const handleViewDetails = (profile) => {
-    setSelectedProfile(profile); // Save the selected profile
-    navigate(`/profile-details`, { state: { profile } }); // Navigate to details page
+    setSelectedProfile(profile);
+    navigate(`/profile-details`, { state: { profile } }); 
   };
   return (
     <div>
