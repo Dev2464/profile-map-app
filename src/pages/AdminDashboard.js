@@ -10,14 +10,14 @@ const AdminDashboard = () => {
     {
       id: 1,
       name: "Dev Joshi",
-      photo: "./icons/channel-1.jpeg",
+      photo: require("./icons/channel-1.jpeg"),
       description: "Software Developer from Ahmedabad",
       address: "Ahmedabad",
     },
     {
       id: 2,
       name: "Jainam Soni",
-      photo: "./icons/channel-2.jpeg",
+      photo: require("./icons/channel-2.jpeg"),
       description: "Graphic Designer from Ahmedabad",
       address: "Ahmedabad",
     },

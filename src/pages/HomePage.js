@@ -8,19 +8,18 @@ const HomePage = () => {
   const [selectedProfile, setSelectedProfile] = useState(null);
   const navigate = useNavigate();
 
-  // Mock profiles data
   const profiles = [
     {
       id: 1,
       name: "Dev joshi",
-      photo: "./icons/channel-1.jpeg",
+      photo: require("./icons/channel-1.jpeg"),
       description: "Software Developer from Ahmedabad",
       address: "Ahmedabad",
     },
     {
       id: 2,
       name: "Jainam Soni",
-      photo: "./icons/channel-2.jpeg",
+      photo: require("./icons/channel-2.jpeg"),
       description: "Graphic Designer from ahmedabad",
       address: "Ahmedabad",
     },
@@ -30,8 +29,8 @@ const HomePage = () => {
     profile.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
   const handleViewDetails = (profile) => {
-    setSelectedProfile(profile); // Save the selected profile
-    navigate(`/profile-details`, { state: { profile } }); // Navigate to details page
+    setSelectedProfile(profile); 
+    navigate(`/profile-details`, { state: { profile } }); 
   };
   return (
     <div>
